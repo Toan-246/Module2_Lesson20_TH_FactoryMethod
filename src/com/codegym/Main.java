@@ -1,0 +1,13 @@
+package com.codegym;
+
+public class Main {
+
+    public static void main(String[] args) {
+        FactoryAnimal factoryAnimal = new FactoryAnimal();
+        Animal a1 = factoryAnimal.getAnimal("feline");
+        Animal a2 = factoryAnimal.getAnimal("canine");
+
+        System.out.println("a1 sound: " + a1.makeSound());
+        System.out.println("a2 sound: " + a2.makeSound());
+    }
+}
